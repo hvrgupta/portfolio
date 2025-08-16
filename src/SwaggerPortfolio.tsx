@@ -20,6 +20,13 @@ function SocialIcon({ label }: { label: string }) {
 			</svg>
 		)
 	}
+	if (lower.includes('email')) {
+		return (
+		  <svg className="su-social-icon" viewBox="0 0 24 24" aria-hidden="true">
+			<path fill="currentColor" d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 2v.01L12 13 4 6.01V6h16ZM4 18V8l8 5 8-5v10H4Z"/>
+		  </svg>
+		)
+	}
 	return null
 }
 
@@ -28,16 +35,45 @@ function TopBar() {
 	return (
 		<div className="su-topbar">
 			<div className="su-topbar-wrapper">
+				{/* Left: Title + Version */}
 				<div className="su-spec">
 					<span className="su-spec-title">{name}</span>
 					<span className="su-spec-badge">{version}</span>
 				</div>
+
+				{/* Right: Social links + Resume Button */}
 				<div className="su-socials">
 					{portfolioSpec.info.links?.map((l) => (
-						<a key={l.label} className="su-social-link" href={l.url} target="_blank" rel="noreferrer" aria-label={l.label} title={l.label}>
+						<a
+							key={l.label}
+							className="su-social-link"
+							href={l.url}
+							target="_blank"
+							rel="noreferrer"
+							aria-label={l.label}
+							title={l.label}
+						>
 							<SocialIcon label={l.label} />
 						</a>
 					))}
+					{portfolioSpec.info.email && (
+						<a
+							className="su-social-link"
+							href={`mailto:${portfolioSpec.info.email}`}
+							aria-label="Email"
+							title="Email"
+						>
+							<SocialIcon label="Email" />
+						</a>
+					)}
+
+					{/* Resume Button */}
+					<button 
+						onClick={() => window.open("/portfolio/resume.pdf", "_blank")}
+						className="resume-btn"
+					>
+						Resume 📄
+					</button>
 				</div>
 			</div>
 		</div>

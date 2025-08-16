@@ -53,8 +53,8 @@ export const portfolioSpec: PortfolioSpec = {
   info: {
     name: 'Harsh Gupta',
     title: 'Software Engineer',
-    version: 'v1.0.0',
-    summary: "👋 Hello,\nI'm Harsh, a Software Engineer with over two years of experience at Tata Consultancy Services, where I worked on diverse projects and collaborated with cross-functional teams.\n I recently completed my Master’s in Software Engineering from the University of Maryland, which helped me deepen my technical expertise and explore emerging technologies.\nMy interests include Full Stack Web Development, DevOps, Distributed Computing, and Security. I’m currently seeking full-time opportunities where I can apply my skills, continue learning, and contribute meaningfully to impactful projects.",
+    version: 'v1.1.0',
+    summary: "👋 Hello, I'm Harsh, a Software Engineer with over two years of experience at Tata Consultancy Services, where I worked on diverse projects and collaborated with cross-functional teams.\n\n I recently completed my Master’s in Software Engineering from the University of Maryland, which helped me deepen my technical expertise and explore emerging technologies.\n\n My interests include Full Stack Web Development, DevOps, Distributed Computing, and Security. I’m currently seeking full-time opportunities where I can apply my skills, continue learning, and contribute meaningfully to impactful projects.",
   location: 'Open to Relocation',
     email: 'harshhgupta16@gmail.com',
     links: [
