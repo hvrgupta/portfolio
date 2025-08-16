@@ -69,7 +69,7 @@ function TopBar() {
 
 					{/* Resume Button */}
 					<button 
-						onClick={() => window.open("/portfolio/resume.pdf", "_blank")}
+						onClick={() => window.open(`${import.meta.env.BASE_URL}resume.pdf`, "_blank")}
 						className="resume-btn"
 					>
 						Resume 📄
