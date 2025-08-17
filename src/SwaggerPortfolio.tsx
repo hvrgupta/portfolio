@@ -203,9 +203,9 @@ export default function SwaggerPortfolio() {
 					</div>
 				</section>
 
-				<OpBlock method="GET" path="/overview" summary="About me" response={overviewResponse}>
+				{/* <OpBlock method="GET" path="/overview" summary="About me" response={overviewResponse}>
 					<div className="sp-paragraph">{info.summary}</div>
-				</OpBlock>
+				</OpBlock> */}
 
 				{info.skills && Object.keys(info.skills).length > 0 ? (
 					<OpBlock method="GET" path="/skills" summary="Skills" response={skillsResponse}>
