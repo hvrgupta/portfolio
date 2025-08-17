@@ -181,7 +181,7 @@ function OpBlock({ method, path, summary, children, response }: OpProps) {
 export default function SwaggerPortfolio() {
 	const { info, experience, projects, education } = portfolioSpec as typeof portfolioSpec & { education: any[] }
 
-	const overviewResponse = { title: info.title, summary: info.summary }
+	// const overviewResponse = { title: info.title, summary: info.summary }
 	const skillsResponse = { skills: info.skills }
 	const experienceResponse = { experience: experience.map(({ company, role, period, location }) => ({ company, role, period, location })) }
 	const projectsResponse = { projects: projects.map(({ name, description, tech }) => ({ name, description, tech })) }
